@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <h1>Battle Ship</h1>
+  <div class="container-fluid">
     <FirstPlayer></FirstPlayer>
     <hr>
     <SecondPlayer></SecondPlayer>
