@@ -1,7 +1,8 @@
 <template>
 	<div class="menu-wrapper content-wrapper text-center">
-		<router-link :to="'/newgame'" class="btn btn-success btn-lg">New Game</router-link>
-		<router-link :to="'/hiscore'" class="btn btn-warning btn-lg">High Score</router-link>
+		<router-link :to="'/newgame'" class="btn btn-primary btn-nav btn-new-game">New Game</router-link>
+			<br /><br />
+		<router-link :to="'/hiscore'" class="btn btn-primary btn-nav">High Score</router-link>
 	</div>
 </template>
 
@@ -17,5 +18,13 @@
 </script>
 
 <style scoped>
+	.btn-new-game {
+		background: #8BC34A;
+		border-color:  #8BC34A;
+	}
 
+	.btn-new-game:hover {
+		background: #4CAF50;
+		border-color:  #4CAF50;
+	}
 </style>

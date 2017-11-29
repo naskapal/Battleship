@@ -1,20 +1,22 @@
 <template>
-	<div class="content-wrapper small-mt">
-		<h3 class="no-mt">High Score</h3>
+	<div class="content-wrapper">
+		<h3 class="no-mt form-label text-center">High Score</h3>
 
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Username</th>
-					<th>Scores</th>
-				</tr>
+		<div class="extra-wrapper small-mt">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Scores</th>
+					</tr>
 
-				<tr>
-					<th>admiralaokiji</th>
-					<th>100 wins</th>
-				</tr>
-			</thead>
-		</table>
+					<tr>
+						<th>admiralaokiji</th>
+						<th>100 wins</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
 	</div>
 </template>
 
