@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import HomePage from '@/components/HomePage'
+import StartContent from '@/components/StartContent'
+import NewGameContent from '@/components/NewGameContent'
+import HiScoreContent from '@/components/HiScoreContent'
 
 Vue.use(Router)
 
@@ -8,8 +11,24 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      component: HomePage,
+      children: [
+      	{
+      		path: "",
+      		name: 'HomePage',
+      		component: StartContent
+      	},
+    		{
+      		path: "/newgame",
+      		name: 'NewGame',
+      		component: NewGameContent
+      	},
+      	{
+      		path: "/hiscore",
+      		name: 'HiScore',
+      		component: HiScoreContent
+      	}
+      ]
     }
   ]
 })
