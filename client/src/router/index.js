@@ -5,7 +5,6 @@ import StartContent from '@/components/StartContent'
 import NewGameContent from '@/components/NewGameContent'
 import HiScoreContent from '@/components/HiScoreContent'
 import FirstPlayer from '@/components/FirstPlayer'
-import SecondPlayer from '@/components/SecondPlayer'
 import MainPage from '@/components/MainPage'
 
 
@@ -32,10 +31,10 @@ export default new Router({
               },
               {
                 path: '/main-page',
-                component: {
-                  MainPage,
-                  FirstPlayer
-                }
+                name: 'mainpage',
+                component: MainPage
+                  // FirstPlayer
+                // }
               }
             ]
           }]
