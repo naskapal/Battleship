@@ -12,7 +12,7 @@
     name: 'MainPage',
     data () {
       return {
-        fleetsData: []
+        fleetsData1: []
       }
     },
     components: {
@@ -27,6 +27,9 @@
         })
         .catch(err => console.log(err))
       }
+    },
+    created () {
+      this.getFleets()
     }
   }
 </script>
