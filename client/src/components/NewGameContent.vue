@@ -16,7 +16,7 @@
 		name: 'ShowName',
 		data () {
 			return {
-
+				username: ''
 			}
 		}
 	}

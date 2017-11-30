@@ -9,6 +9,8 @@
         </div>
         <div class="col-md-6">
           <h2 style="margin-top: 2em">Name Here</h2>
+          <h2>Your Ship: {{player1}}</h2>
+          <h2 style="color: red; background-color: black" v-if="player1 <= 0">You've Sinked</h2>
           <button type="button" class="btn btn-success" style="width: 100%; margin-top: 5em" @click="startGame" :disabled="atkBtn">Attack!</button>
         </div>
       </div>
@@ -19,7 +21,7 @@
 <script>
   export default {
     name: 'FirstPlayer',
-    props: ['hit'],
+    props: ['hit','player1'],
     data () {
       return {
         atkBtn: false,
@@ -41,9 +43,8 @@
         }  else {
            document.querySelector(`#${event.currentTarget.id}`).style.backgroundColor = 'gray';
         }
-
+        document.querySelector(`#${event.currentTarget.id}`).disabled = true
         this.counter++
-
         this.$emit('attack-player-one', data);
       }
     }

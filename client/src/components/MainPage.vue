@@ -1,7 +1,7 @@
 <template>
   <div class="main-page">
-    <FirstPlayer @attack-player-one="getPlayerOneAttack" :hit="hit1"></FirstPlayer>
-    <SecondPlayer @attack-player-two="getPlayerTwoAttack" :hit="hit2"></SecondPlayer>
+    <FirstPlayer @attack-player-one="getPlayerOneAttack" :hit="hit1" :player1="player1"></FirstPlayer>
+    <SecondPlayer @attack-player-two="getPlayerTwoAttack" :hit="hit2" :player2="player2"></SecondPlayer>
   </div>
 </template>
 
