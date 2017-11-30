@@ -9,21 +9,18 @@
 </template>
 
 <script>
-	import MainLogo from "@/components/MainLogo";
-	import StartContent from "@/components/StartContent";
-
-	export default {
-		name: 'HomePage',
-		components: {
-			MainLogo,
-			StartContent
-		},
-		data () {
-			return {
-
-			}
-		}
+import MainLogo from '@/components/MainLogo'
+import StartContent from '@/components/StartContent'
+export default {
+	name: 'HomePage',
+	components: {
+		MainLogo,
+		StartContent
+	},
+	data () {
+		return {}
 	}
+}
 </script>
 
 <style scoped>

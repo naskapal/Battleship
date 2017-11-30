@@ -7,14 +7,12 @@
 </template>
 
 <script>
-	export default {
-		name: 'StartContent',
-		data () {
-			return {
-
-			}
-		}
-	}
+export default {
+  name: 'StartContent',
+  data () {
+    return {}
+  }
+}
 </script>
 
 <style scoped>

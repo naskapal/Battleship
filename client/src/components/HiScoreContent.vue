@@ -21,14 +21,12 @@
 </template>
 
 <script>
-	export default {
-		name: 'HiScore',
-		data () {
-			return {
-
-			}
-		}
-	}
+export default {
+  name: 'HiScore',
+  data () {
+    return {}
+  }
+}
 </script>
 
 <style scoped>

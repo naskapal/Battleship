@@ -4,6 +4,7 @@ import HomePage from '@/components/HomePage'
 import StartContent from '@/components/StartContent'
 import NewGameContent from '@/components/NewGameContent'
 import HiScoreContent from '@/components/HiScoreContent'
+import BoardGame from '@/components/BoardGame'
 
 Vue.use(Router)
 
@@ -13,22 +14,26 @@ export default new Router({
       path: '/',
       component: HomePage,
       children: [
-      	{
-      		path: "",
-      		name: 'HomePage',
-      		component: StartContent
-      	},
-    		{
-      		path: "/newgame",
-      		name: 'NewGame',
-      		component: NewGameContent
-      	},
-      	{
-      		path: "/hiscore",
-      		name: 'HiScore',
-      		component: HiScoreContent
-      	}
+        {
+          path: '',
+          name: 'HomePage',
+          component: StartContent
+        },
+        {
+          path: '/newgame',
+          name: 'NewGame',
+          component: NewGameContent
+        },
+        {
+          path: '/hiscore',
+          name: 'HiScore',
+          component: HiScoreContent
+        }
       ]
-    }
+		},
+		{
+			path: '/boardgame',
+			component: BoardGame
+		}
   ]
 })
