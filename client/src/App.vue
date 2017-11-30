@@ -60,7 +60,7 @@ export default {
   }
 
   .extra-wrapper {
-    background:  #fffc;
+    background:  rgba(333,333,333, 0.7);
     border-radius: 10px
   }
 

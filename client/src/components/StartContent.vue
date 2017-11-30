@@ -13,6 +13,12 @@
 			return {
 
 			}
+		},
+
+		methods: {
+			changeClass() {
+				console.log(event)
+			}
 		}
 	}
 </script>
@@ -21,6 +27,10 @@
 	.btn-new-game {
 		background: #8BC34A;
 		border-color:  #8BC34A;
+	}
+
+	.red {
+		background: crimson !important;
 	}
 
 	.btn-new-game:hover {
