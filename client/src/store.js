@@ -17,7 +17,7 @@ var config = {
 }
 firebase.initializeApp(config)
 
-Vue.prototype.$db = firebase.database()
+Vue.prototype.$dbs = firebase.database()
 
 Vue.use(Vuex)
 
@@ -39,11 +39,12 @@ const mutations = {
 
 const actions = {
   getFleetBoard ({commit}) {
-    this.https.get('/')
+    https.get('/')
       .then(({ data }) => {
         console.log('uyeyeyeye')
         console.log(data)
         commit('setFleetBoard', data)
+        // this.saveToFireBase(data)
       })
       .catch(err => {
         console.log('lalalallalala')
@@ -51,7 +52,7 @@ const actions = {
       })
   },  
   saveToFireBase (state) {
-    this.$db.ref('/battleship').push({
+    this.$dbs.ref('/battleship').push({
       username: state.username,
       fleetBoard: state.fleetBoard
     })
