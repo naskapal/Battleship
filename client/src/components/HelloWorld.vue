@@ -13,6 +13,17 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+    addUser () {
+      this.$db.ref('battleship').push({
+        name: 'Yonathan',
+        fleet: [[1, 3], [1, 4], [1, 5]]
+      })
+    }
+  },
+  created () {
+    this.addUser()
   }
 }
 </script>
