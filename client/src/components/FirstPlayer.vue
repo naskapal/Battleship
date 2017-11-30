@@ -55,10 +55,7 @@
   height: 50px;
   margin: 5px
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 19b224fec94310bbe8c3c6875bae324fedb79bf1
 .firstPlayer .container-fluid {
   height: 100vh;
   padding-top: 20vh;
