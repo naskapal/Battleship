@@ -17,6 +17,7 @@ export default {
       .then(({data}) => {
         console.log('uyeyeyeye')
         console.log(data)
+        fleetBoard = data
       })
       .catch(err => {
         console.log('lalalallalala')

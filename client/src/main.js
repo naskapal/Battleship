@@ -6,6 +6,16 @@ import router from './router'
 import axios from 'axios'
 import store from './store'
 
+var config = {
+  apiKey: 'AIzaSyAn8ln_F0Ayj8XMFpE4yNy_8MQ7GwDVuoU',
+  authDomain: 'battleship-hacktiv8.firebaseapp.com',
+  databaseURL: 'https://battleship-hacktiv8.firebaseio.com',
+  projectId: 'battleship-hacktiv8',
+  storageBucket: 'battleship-hacktiv8.appspot.com',
+  messagingSenderId: '166654376018'
+}
+firebase.initializeApp(config)
+
 Vue.prototype.$https = axios.create({
   baseURL: 'https://us-central1-test-project-186802.cloudfunctions.net/ship-initializer'
 })

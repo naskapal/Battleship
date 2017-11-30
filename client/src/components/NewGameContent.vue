@@ -14,9 +14,9 @@
 <script>
 	import { mapState, mapActions } from 'vuex'
 	export default {
-		name: 'ShowName',
-		data () {
-			return {
+	  name: 'ShowName',
+	  data () {
+	    return {
 
 			}
 		},
