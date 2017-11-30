@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import firebase from 'firebase'
+import axios from 'axios'
+import store from './store'
 
 var config = {
   apiKey: "AIzaSyAn8ln_F0Ayj8XMFpE4yNy_8MQ7GwDVuoU",
@@ -15,6 +17,10 @@ var config = {
 }
 firebase.initializeApp(config)
 
+Vue.prototype.$https = axios.create({
+  baseURL: 'https://us-central1-test-project-186802.cloudfunctions.net/ship-initializer'
+})
+
 Vue.config.productionTip = false
 
 Vue.prototype.$db = firebase.database()
@@ -23,6 +29,7 @@ Vue.prototype.$db = firebase.database()
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
