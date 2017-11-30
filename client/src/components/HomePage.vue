@@ -17,12 +17,12 @@
 		components: {
 			MainLogo,
 			StartContent
-		},
-		data () {
-			return {
+	},
+	  data () {
+	    return {
 
-			}
-		}
+	    }
+	  }
 	}
 </script>
 
