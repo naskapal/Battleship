@@ -3,17 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import firebase from 'firebase'
 import axios from 'axios'
+import firebase from 'firebase'
 import store from './store'
 
 var config = {
-  apiKey: 'AIzaSyAn8ln_F0Ayj8XMFpE4yNy_8MQ7GwDVuoU',
-  authDomain: 'battleship-hacktiv8.firebaseapp.com',
-  databaseURL: 'https://battleship-hacktiv8.firebaseio.com',
-  projectId: 'battleship-hacktiv8',
-  storageBucket: 'battleship-hacktiv8.appspot.com',
-  messagingSenderId: '166654376018'
+  apiKey: "AIzaSyAGN2E61wzkrFov7RCP_HFzKpR54ErXHKM",
+  authDomain: "yonathan-e91f4.firebaseapp.com",
+  databaseURL: "https://yonathan-e91f4.firebaseio.com",
+  projectId: "yonathan-e91f4",
+  storageBucket: "yonathan-e91f4.appspot.com",
+  messagingSenderId: "125607102460"
 }
 firebase.initializeApp(config)
 

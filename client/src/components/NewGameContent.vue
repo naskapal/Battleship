@@ -6,19 +6,26 @@
 		</div>
 
 		<div class="small-mt text-center">
-			<router-link :to="'/main-page'" class="btn btn-nav btn-success">Lanjut</router-link>
+			<router-link :to="'/main-page'" class="btn btn-nav btn-success" @click="saveToFireBase()">Lanjut</router-link>
 		</div><!-- /.small-mt text-center -->
 	</div><!-- /.wrapper -->
 </template>
 
 <script>
+	import { mapState, mapActions } from 'vuex'
 	export default {
 	  name: 'ShowName',
 	  data () {
 	    return {
 
-    }
-  }
+			}
+		},
+		computed: {
+			...mapState(['username', 'fleetBoard'])
+		},
+		methods: {
+			...mapActions(['saveToFireBase'])
+		}
 	}
 </script>
 

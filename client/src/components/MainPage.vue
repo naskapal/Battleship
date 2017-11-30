@@ -23,7 +23,12 @@
       getFleets () {
         this.$https.get('/')
         .then(({data}) => {
+          console.log('ini datanya ', data)
           this.fleetsData1 = data
+          this.$db.ref('/database').set({
+            username: '',
+            fleet: this.fleetsData1
+          })
         })
         .catch(err => console.log(err))
       }
