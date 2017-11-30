@@ -1,23 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import firebase from 'firebase'
+// import firebase from 'firebase'
 
 const https = axios.create({
   baseURL: 'https://us-central1-test-project-186802.cloudfunctions.net/ship-initializer'
 })
 
-var config = {
-  apiKey: "AIzaSyAn8ln_F0Ayj8XMFpE4yNy_8MQ7GwDVuoU",
-  authDomain: "battleship-hacktiv8.firebaseapp.com",
-  databaseURL: "https://battleship-hacktiv8.firebaseio.com",
-  projectId: "battleship-hacktiv8",
-  storageBucket: "battleship-hacktiv8.appspot.com",
-  messagingSenderId: "166654376018"
-}
-firebase.initializeApp(config)
+// var config = {
+//   apiKey: "AIzaSyAn8ln_F0Ayj8XMFpE4yNy_8MQ7GwDVuoU",
+//   authDomain: "battleship-hacktiv8.firebaseapp.com",
+//   databaseURL: "https://battleship-hacktiv8.firebaseio.com",
+//   projectId: "battleship-hacktiv8",
+//   storageBucket: "battleship-hacktiv8.appspot.com",
+//   messagingSenderId: "166654376018"
+// }
+// firebase.initializeApp(config)
 
-Vue.prototype.$dbs = firebase.database()
+// Vue.prototype.$dbs = firebase.database()
 
 Vue.use(Vuex)
 
