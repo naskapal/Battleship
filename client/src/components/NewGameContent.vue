@@ -13,12 +13,12 @@
 
 <script>
 	export default {
-		name: 'ShowName',
-		data () {
-			return {
+	  name: 'ShowName',
+	  data () {
+	    return {
 
-			}
-		}
+    }
+  }
 	}
 </script>
 

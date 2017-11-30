@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios'
+// import axios from 'axios'
 
-const http = axios.create({
-  baseURL: 'https://us-central1-test-project-186802.cloudfunctions.net/ship-initializer'
-})
+// const http = axios.create({
+//   baseURL: 'https://us-central1-test-project-186802.cloudfunctions.net/ship-initializer'
+// })
 
 Vue.use(Vuex)
 

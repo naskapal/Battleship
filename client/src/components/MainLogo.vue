@@ -8,12 +8,12 @@
 
 <script>
 	export default {
-		name: 'MainLogo',
-		data () {
-			return {
+	  name: 'MainLogo',
+	  data () {
+	    return {
 
-			}
-		}
+	    }
+	  }
 	}
 </script>
 
