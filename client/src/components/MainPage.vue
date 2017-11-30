@@ -23,7 +23,7 @@
       getFleets () {
         this.$https.get('/')
         .then(({data}) => {
-          this.fleetsData = data
+          this.fleetsData1 = data
         })
         .catch(err => console.log(err))
       }
