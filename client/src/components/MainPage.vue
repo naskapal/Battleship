@@ -1,7 +1,6 @@
 <template>
-  <div class="container-fluid">
+  <div class="main-page">
     <FirstPlayer></FirstPlayer>
-    <hr>
     <SecondPlayer></SecondPlayer>
   </div>
 </template>
@@ -17,3 +16,7 @@
     }
   }
 </script>
+
+<style>
+
+</style>

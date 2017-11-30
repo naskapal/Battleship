@@ -54,6 +54,7 @@
 .secondPlayer .container-fluid {
   height: 100vh;
   padding-top: 20vh;
-  padding-bottom: 20vh
+  padding-bottom: 20vh;
+  background-color: #4fc7ef
 }
 </style>
