@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
-       <router-view/>
-    </div>
-    <!-- /.container -->
+    <router-view/>
   </div>
 </template>
 
@@ -29,6 +26,12 @@ export default {
   body {
     background: #4fc7ef;
     font-family: 'Schoolbell', cursive;
+  }
+
+  @media (min-width: 992px){
+    .col-tile-1{
+      width: 10% !important;
+    }
   }
 
   .full-width {
