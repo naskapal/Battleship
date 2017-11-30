@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6" :hidden="hidenPanel">
           <div class="row">
-            <div class="col-md-2.5" v-for="data in datas"><button type="button" class="btn btn-primary" @click="countRound(data)" :disabled="panelBtn"></button></div>
+            <div class="col-md-1 col-tile-1" v-for="data in datas"><button type="button" class="btn btn-primary" @click="countRound(data)" :disabled="panelBtn"></button></div>
           </div>
         </div>
         <div class="col-md-6">

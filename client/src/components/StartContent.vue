@@ -21,6 +21,10 @@ export default {
 		border-color:  #8BC34A;
 	}
 
+	.red {
+		background: crimson !important;
+	}
+
 	.btn-new-game:hover {
 		background: #4CAF50;
 		border-color:  #4CAF50;

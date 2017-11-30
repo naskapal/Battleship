@@ -26,14 +26,15 @@ export default new Router({
                 path: "/hiscore",
                 name: 'HiScore',
                 component: HiScoreContent
-              },
-              {
-                path: '/main-page',
-                name: 'mainpage',
-                component: MainPage
-                  // FirstPlayer
-                // }
               }
             ]
-          }]
+          },
+           {
+              path: '/main-page',
+              name: 'mainpage',
+              component: MainPage
+                // FirstPlayer
+              // }
+            }
+          ]
         })

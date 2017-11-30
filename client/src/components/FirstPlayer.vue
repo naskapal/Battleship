@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6" :hidden="hidenPanel">
           <div class="row">
-            <div class="col-md-2.5" v-for="(data, index) in datas"><button type="button" class="btn btn-primary" @click="countRound(data, index, $event)" :disabled="panelBtn" :id="`player1-${index}`"></button></div>
+            <div class="col-md-1 col-tile-1" v-for="(data, index) in datas"><button type="button" class="btn btn-primary" @click="countRound(data, index, $event)" :disabled="panelBtn" :id="`player1-${index}`"></button></div>
           </div>
         </div>
         <div class="col-md-6">
@@ -55,6 +55,10 @@
   height: 50px;
   margin: 5px
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19b224fec94310bbe8c3c6875bae324fedb79bf1
 .firstPlayer .container-fluid {
   height: 100vh;
   padding-top: 20vh;
