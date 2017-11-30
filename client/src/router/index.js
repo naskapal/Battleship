@@ -7,7 +7,6 @@ import HiScoreContent from '@/components/HiScoreContent'
 import FirstPlayer from '@/components/FirstPlayer'
 import MainPage from '@/components/MainPage'
 
-
 Vue.use(Router)
 
 export default new Router({
